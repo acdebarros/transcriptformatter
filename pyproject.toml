@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transcriptformatter"
+version = "2025.12"
+authors = [
+{name = "Ana Carolina de Barros", email = "a.debarros@queensu.ca"}, 
+]
+description = "A program to transform .vtt files output from Zoom into readable transcripts for qualitative analysis"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "webvtt-py>=0.5.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+transformat = "transcriptformatter.formatTranscript:main"

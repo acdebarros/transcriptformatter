@@ -1,3 +1,14 @@
+Metadata-Version: 2.4
+Name: transcriptformatter
+Version: 2025.12
+Summary: A program to transform .vtt files output from Zoom into readable transcripts for qualitative analysis
+Author-email: Ana Carolina de Barros <a.debarros@queensu.ca>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: webvtt-py>=0.5.1
+Dynamic: license-file
+
 # Transcript Formatter
 Python code to format a .vtt file as a transcript.
 
@@ -27,8 +38,6 @@ Then, replace pip with pipx in the command above.
 -	--format: This is how you specify the file that needs to be formatted. If it's saved in the same folder as the Python script, you just need to give it the file name. If not, you need the whole file path. Make sure to run it in quotation marks if there are spaces in the file path (e.g., `python3 formatTranscript.py --format "Users/anacarolinadebarros/Documents/GitHub Repositories"`), or use escape characters (e.g., `python3 formatTranscript.py --format Users/anacarolinadebarros/Documents/GitHub\ Repositories). 
 -	--changeparticipant: This allows you to change the display name of the participant, and you will need to follow it up with both the display name and the name you want to replace it with. For example, if the participant's display name was their participant ID and you want to replace it with their pseudonym, you would run: `python3 formatTranscript.py --format FILENAME --changeparticipant "RD111" "Andrew"`. Note that this only works if the script can find your participant's display name exactly as you provide it.
 -	--changeinterviewer: This allows you to change the display name of the interviewer, and you will need to follow it up with both the display name and the name you want to replace it with. For example, if the interviewer's display name was their first name and their affiliation and you want to replace it with their initials, you would run: `python3 formatTranscript.py --format FILENAME --changeparticipant "Carolina (she/her) - van Anders Lab" "CDB"`. Note that this only works if the script can find your interviewer's display name exactly as you provide it.
-
-**Note**: If you installed the code as a package using the .whl file, instead of running `python3 formatTranscript.py`, you can just run `transformat` followed by the necessary flags.
 
 ## Questions, Comments, Concerns
 
