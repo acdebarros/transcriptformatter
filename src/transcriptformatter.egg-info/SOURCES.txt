@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/transcriptformatter/__init__.py
+src/transcriptformatter/formatTranscript.py
+src/transcriptformatter.egg-info/PKG-INFO
+src/transcriptformatter.egg-info/SOURCES.txt
+src/transcriptformatter.egg-info/dependency_links.txt
+src/transcriptformatter.egg-info/entry_points.txt
+src/transcriptformatter.egg-info/requires.txt
+src/transcriptformatter.egg-info/top_level.txt

@@ -84,7 +84,7 @@ def create_parser():
 
     return parser
 
-if __name__ == "__main__":
+def main():
     # Set up parser & exit handler
     parser = create_parser()
     args = parser.parse_args()
@@ -108,3 +108,6 @@ if __name__ == "__main__":
             format_file(path, participant=participant)
         else:
             format_file(path)
+
+if __name__ == "__main__":
+    main()
