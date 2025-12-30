@@ -7,7 +7,7 @@ Using Transcript Formatter requires you to have Python installed on your system.
 
 You can download the file from this repository by hitting the green "<> Code" button and either cloning the repository (if you're used to using git) or by downloading the files as a .zip. Then, unzip the folder and save the files wherever you'd like to use them.
 
-You can also install this using the .whl package. In your command line, run:
+You can also install this using the .whl file in the dist folder. In your command line, run:
 
 `pip install /path/to/.whlfile`
 
